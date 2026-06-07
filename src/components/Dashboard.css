@@ -1,0 +1,86 @@
+.card-scifi {
+  background: linear-gradient(135deg, rgba(13, 13, 26, 0.8), rgba(13, 13, 26, 0.5));
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 300ms ease;
+}
+
+.card-scifi:hover {
+  border-color: rgba(6, 182, 212, 0.4);
+  background: linear-gradient(135deg, rgba(13, 13, 26, 0.9), rgba(13, 13, 26, 0.6));
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.1);
+}
+
+.icon-glow {
+  filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.6));
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #06b6d4, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Position Cards Animation */
+.position-card-enter {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Pulse for Important Values */
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Progress Bar Animation */
+.progress-fill {
+  transition: width 300ms ease;
+}
+
+/* Signal Strength Indicator */
+.signal-strength {
+  animation: grow 0.5s ease-out;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--width);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-scifi {
+    padding: 12px;
+  }
+}

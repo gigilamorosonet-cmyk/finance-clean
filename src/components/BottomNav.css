@@ -1,0 +1,10 @@
+.bottom-nav {
+  backdrop-filter: blur(24px);
+  background: rgba(13, 13, 26, 0.8);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 64px;
+  }
+}

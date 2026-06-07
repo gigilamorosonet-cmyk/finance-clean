@@ -1,0 +1,13 @@
+.pricing-card {
+  transition: all 300ms ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+}
+
+.pricing-card:hover .text-gradient-cyan {
+  filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.5));
+}
